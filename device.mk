@@ -23,9 +23,6 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-# Vendor Blobs
-$(call inherit-product, vendor/huawei/hi6250-common/hi6250-vendor.mk)
-
 # Common Tree
 $(call inherit-product, device/huawei/hi6250-common/hi6250.mk)
 
