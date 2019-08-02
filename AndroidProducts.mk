@@ -24,5 +24,5 @@
 # components.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_prague.mk \
-    $(LOCAL_DIR)/lineage_prague.mk
+    $(LOCAL_DIR)/full_warsaw.mk \
+    $(LOCAL_DIR)/lineage_warsaw.mk

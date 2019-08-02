@@ -23,15 +23,16 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-$(call inherit-product-if-exists, vendor/huawei/prague/prague-vendor.mk)
+# Vendor Blobs
+$(call inherit-product, vendor/huawei/hi6250-common/hi6250-vendor.mk)
+
+# Common Tree
+$(call inherit-product, device/huawei/hi6250-common/hi6250.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
-
-# Device
-$(call inherit-product, device/huawei/hi6250-common/hi6250.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
